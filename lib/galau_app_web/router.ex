@@ -17,6 +17,7 @@ defmodule GalauAppWeb.Router do
     pipe_through :browser
 
     get "/", PageController, :index
+    resources "/questions", QuestionController
   end
 
   # Other scopes may use custom stacks.
